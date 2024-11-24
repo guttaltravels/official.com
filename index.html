@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guttal Travels</title>
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsRfHEwC09LWMEQqio8imFeeWPJo2sJpntcFQJ0HZMcTMzlPb7JYz5KwMQWa3JwUpgu1R3UcC5iuo49nd0wn4x6I1XpcEA3jrx5cIlXWRAB_m7HOtma9Da3Gy9OXZriWwZKbpOPaERyMeUvXKs2HhGnS7dxbk4tvkmw35OrTl-nUOJ4qwNQVzKFJVHBlYx/s320/Guttal%20travels.png" type="image/png">
   <style>
     /* General Styles */
     body {
@@ -133,16 +134,67 @@
       background: #ff5722;
       border-radius: 5px;
     }
+
+  /* Customer Reviews Section */
+  #reviews {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  #reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .reviews-marquee {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+  }
+
+  .marquee-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+
+  .review-box {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-right: 50px; /* Spacing between reviews */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 350px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+
+  /* Keyframes for scrolling effect */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
   </style>
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#packages">Packages</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#packages">Packages</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+	
 
   <!-- Header Section -->
   <header id="home">
@@ -209,6 +261,25 @@
     <p>Email: <a href="mailto:guttaltravels@gmail.com">guttaltravels@gmail.com</a></p>
     <p>Phone: +91-9207010930</p>
   </section>
+
+
+<!-- Customer Reviews Section -->
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-marquee">
+    <div class="marquee-content">
+      <div class="review-box">"We had an amazing trip to Chikkamagaluru with Guttal Travels! Highly recommend! - Arjun M."</div>
+      <div class="review-box">"The Wayanad adventure package was thrilling! Great experience overall. - Priya S."</div>
+      <div class="review-box">"Exceptional service and beautiful destinations! Perfect trip. - Rahul K."</div>
+      <div class="review-box">"Affordable packages with premium service. Thank you, Guttal Travels! - Sneha R."</div>
+      <div class="review-box">"Amazing organization and attention to detail. Loved it! - Kavya T."</div>
+      <!-- Add more reviews here if needed -->
+    </div>
+  </div>
+</section>
+
+
+
 
   <footer class="footer">
     <p>&copy; 2024 Guttal Travels. All rights reserved.</p>
