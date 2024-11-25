@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guttal Travels</title>
-  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGRHO89x1Occsa9siJax_iYUZJIyuFlrz-M00ZW1VHbgz423Q-m6nHxWqPY6eY94GK7zQ55g5hv1KrXNe0UnZu6f3GaTarqCTYhmmKu0fA6w8-tGxsglZyyXppG9MLYqdb_3vSWPy1nm8IfmF4bTEOrNtI3NS2pHaMO6FASZVX-FC1Z2uU5vsrMmxC6Smw/s248/IMG_0673.jpeg" type="image/png">
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsRfHEwC09LWMEQqio8imFeeWPJo2sJpntcFQJ0HZMcTMzlPb7JYz5KwMQWa3JwUpgu1R3UcC5iuo49nd0wn4x6I1XpcEA3jrx5cIlXWRAB_m7HOtma9Da3Gy9OXZriWwZKbpOPaERyMeUvXKs2HhGnS7dxbk4tvkmw35OrTl-nUOJ4qwNQVzKFJVHBlYx/s320/Guttal%20travels.png" type="image/png">
   <style>
     /* General Styles */
     body {
@@ -89,11 +89,14 @@
       gap: 10px;
     }
 
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.gallery-grid img {
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images fill the box without distortion */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
     /* Contact Section */
     #contact a {
@@ -183,6 +186,49 @@
     }
   }
 
+
+  #map-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  #map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  #map {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+body {
+  padding: 25px;
+  background-color: #f0f1f3;
+  font-family: "Arial", sans-serif;
+}
+
+#place-picker-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.place-picker-container {
+  padding: 20px;
+}
   </style>
 </head>
 <body>
@@ -198,7 +244,7 @@
 
   <!-- Header Section -->
   <header id="home">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGRHO89x1Occsa9siJax_iYUZJIyuFlrz-M00ZW1VHbgz423Q-m6nHxWqPY6eY94GK7zQ55g5hv1KrXNe0UnZu6f3GaTarqCTYhmmKu0fA6w8-tGxsglZyyXppG9MLYqdb_3vSWPy1nm8IfmF4bTEOrNtI3NS2pHaMO6FASZVX-FC1Z2uU5vsrMmxC6Smw/s248/IMG_0673.jpeg" alt="Guttal Travels Logo" class="logo">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsRfHEwC09LWMEQqio8imFeeWPJo2sJpntcFQJ0HZMcTMzlPb7JYz5KwMQWa3JwUpgu1R3UcC5iuo49nd0wn4x6I1XpcEA3jrx5cIlXWRAB_m7HOtma9Da3Gy9OXZriWwZKbpOPaERyMeUvXKs2HhGnS7dxbk4tvkmw35OrTl-nUOJ4qwNQVzKFJVHBlYx/s320/Guttal%20travels.png" alt="Guttal Travels Logo" class="logo">
     <h1>Explore the World with Guttal Travels!</h1>
     <a href="#packages" class="btn">View Packages</a>
   </header>
@@ -216,53 +262,111 @@
   <section id="packages" class="section">
     <h2>Our Packages</h2>
     <div class="package">
-      <h3>Kannur to Chikkamagaluru</h3>
-      <ul>
-        <li>1-day stay, 2 days sightseeing</li>
-        <li>Excludes food</li>
-        <li>Group Pricing:
-          <ul>
-            <li>2 pax: ₹7,000</li>
-            <li>4 pax: ₹12,000</li>
-          </ul>
-        </li>
-      </ul>
+      <h3>Bangalore Packages<h3>
     </div>
     <div class="package">
-      <h3>Wayanad Adventure Trip</h3>
-      <ul>
-        <li>3 days, 2 nights</li>
-        <li>Attractions: zip-lining, rafting, tea estates</li>
-        <li>Group Pricing:
-          <ul>
-            <li>2 pax: ₹9,000</li>
-            <li>4 pax: ₹16,000</li>
-          </ul>
-        </li>
-      </ul>
+      <h3>Chikkamagalur Packages</h3>
+    </div>
+	    <div class="package">
+      <h3>Kannur Packages</h3>
+    </div>
+	    <div class="package">
+      <h3>Wayand Packages</h3>
+    </div>
+	    <div class="package">
+      <h3>Coorg Packages</h3>
+    </div>
+		    <div class="package">
+      <h3>Gokarana Packages</h3>
     </div>
   </section>
 
-  <!-- Gallery Section -->
+<!Gallery field here>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .slideshow-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      max-width: 1200px;
+    }
+
+    .slideshow {
+      width: 48%;
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+      height: 300px; /* Ensures all images have the same height */
+      object-fit: cover; /* Ensures images fit without distortion */
+      animation: fade 2s ease-in-out; /* Adds fade animation */
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
   <section id="gallery" class="section">
     <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="trip1.jpg" alt="Trip 1">
-      <img src="trip2.jpg" alt="Trip 2">
-      <img src="trip3.jpg" alt="Trip 3">
-      <img src="trip4.jpg" alt="Trip 4">
+    <div class="slideshow-container">
+      <!-- Left Slideshow -->
+      <div class="slideshow" id="slideshowLeft">
+        <img class="mySlides left" src="https://static.toiimg.com/thumb/msid-54559212,width-748,height-499,resizemode=4,imgsize-307081/.jpg" alt="Trip 1">
+        <img class="mySlides left" src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/12/Lakkidi-View-Point-Wayanad.jpg?resize=1200%2C797&ssl=1" alt="Trip 2">
+        <img class="mySlides left" src="https://pbs.twimg.com/media/F1nGHWyaQAAoDXj.jpg" alt="Trip 3">
+      </div>
+      <!-- Right Slideshow -->
+      <div class="slideshow" id="slideshowRight">
+        <img class="mySlides right" src="https://www.theindianpanorama.news/wp-content/uploads/2022/03/t.jpg" alt="Trip 4">
+        <img class="mySlides right" src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Fhdd.jpg%2Fhdd-1725353611864.jpg&w=2048&q=75" alt="Trip 5">
+        <img class="mySlides right" src="https://karnatakatourism.org/wp-content/uploads/2020/06/Mysuru-Palace-banner-1920_1100.jpg" alt="Trip 6">
+      </div>
     </div>
   </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Have questions? Reach out to us!</p>
-    <p>Email: <a href="mailto:guttaltravels@gmail.com">guttaltravels@gmail.com</a></p>
-    <p>Phone: +91-9207010930</p>
-  </section>
+  <script>
+    // Left slideshow
+    var leftIndex = 0;
+    slideshowCarousel("left");
 
+    // Right slideshow
+    var rightIndex = 0;
+    slideshowCarousel("right");
 
+    function slideshowCarousel(slideshowClass) {
+      var i;
+      var slides = document.getElementsByClassName(slideshowClass);
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      if (slideshowClass === "left") {
+        leftIndex++;
+        if (leftIndex > slides.length) { leftIndex = 1; }
+        slides[leftIndex - 1].style.display = "block";
+        setTimeout(() => slideshowCarousel("left"), 4000); // 4 seconds for left slideshow
+      } else if (slideshowClass === "right") {
+        rightIndex++;
+        if (rightIndex > slides.length) { rightIndex = 1; }
+        slides[rightIndex - 1].style.display = "block";
+        setTimeout(() => slideshowCarousel("right"), 4000); // 4 seconds for right slideshow
+      }
+    }
+  </script>
 <!-- Customer Reviews Section -->
 <section id="reviews" class="section">
   <h2>Customer Reviews</h2>
@@ -279,6 +383,17 @@
 </section>
 
 
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us!</p>
+    <p>Email: <a href="mailto:guttaltravels@gmail.com">guttaltravels@gmail.com</a></p>
+    <p>Phone: +91-9207010930</p>
+  </section>
+ 
+<script async defer 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdOvnounXm8pQB2-avEik2pJE1-v9InJA&callback=initMap">
+</script>
 
 
   <footer class="footer">
